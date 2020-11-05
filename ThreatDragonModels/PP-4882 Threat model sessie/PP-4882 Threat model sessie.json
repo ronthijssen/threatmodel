@@ -18,8 +18,8 @@
                 "height": 80
               },
               "position": {
-                "x": 15,
-                "y": 121
+                "x": 12,
+                "y": 124
               },
               "angle": 0,
               "id": "1acc21ac-9998-4bff-b60c-02f8dc55153e",
@@ -108,8 +108,8 @@
                 "height": 80
               },
               "position": {
-                "x": 169,
-                "y": 457
+                "x": 43,
+                "y": 502
               },
               "angle": 0,
               "id": "0864c526-aa08-48bd-aa77-10fede29993d",
@@ -140,16 +140,25 @@
               "angle": 0,
               "id": "bd9f3250-9088-4bad-b3d5-e33744a8c14b",
               "z": 7,
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "status": "Open",
+                  "severity": "Low",
+                  "type": "Denial of service",
+                  "title": "Huge assets",
+                  "mitigation": "Limit max filesize"
+                }
+              ],
               "attrs": {
                 ".element-shape": {
-                  "class": "element-shape hasNoOpenThreats isInScope"
+                  "class": "element-shape hasOpenThreats isInScope"
                 },
                 "text": {
                   "text": "Content\nDisplay Service"
                 },
                 ".element-text": {
-                  "class": "element-text hasNoOpenThreats isInScope"
+                  "class": "element-text hasOpenThreats isInScope"
                 }
               }
             },
@@ -169,7 +178,7 @@
                   "position": 0.5,
                   "attrs": {
                     "text": {
-                      "text": "flow 5",
+                      "text": "Retrieve from S3",
                       "font-weight": "400",
                       "font-size": "small"
                     }
@@ -194,8 +203,8 @@
                 "height": 80
               },
               "position": {
-                "x": 21,
-                "y": 254
+                "x": 12,
+                "y": 255
               },
               "angle": 0,
               "id": "d07f3966-4dc9-4fc2-aba9-09637c6313cb",
@@ -229,7 +238,7 @@
                   "position": 0.5,
                   "attrs": {
                     "text": {
-                      "text": "file download",
+                      "text": "file download ??",
                       "font-weight": "400",
                       "font-size": "small"
                     }
@@ -239,12 +248,14 @@
               "z": 11,
               "hasOpenThreats": false,
               "isPublicNetwork": true,
+              "outOfScope": true,
+              "reasonOutOfScope": "uitspraak nodig",
               "attrs": {
                 ".marker-target": {
                   "class": "marker-target hasNoOpenThreats isInScope"
                 },
                 ".connection": {
-                  "class": "connection hasNoOpenThreats isInScope"
+                  "class": "connection hasNoOpenThreats isOutOfScope"
                 }
               }
             },
@@ -256,8 +267,8 @@
                 "y": 387
               },
               "target": {
-                "x": 486,
-                "y": 41
+                "x": 413,
+                "y": 37
               },
               "vertices": [
                 {
@@ -323,7 +334,7 @@
                   "position": 0.5,
                   "attrs": {
                     "text": {
-                      "text": "flow 10",
+                      "text": "Store in S3",
                       "font-weight": "400",
                       "font-size": "small"
                     }
@@ -331,6 +342,40 @@
                 }
               ],
               "z": 14,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "smooth": true,
+              "source": {
+                "id": "bd9f3250-9088-4bad-b3d5-e33744a8c14b"
+              },
+              "target": {
+                "id": "1acc21ac-9998-4bff-b60c-02f8dc55153e"
+              },
+              "vertices": [],
+              "id": "60da76cc-0baf-48f5-b9f8-f09d92d1191e",
+              "labels": [
+                {
+                  "position": 0.5,
+                  "attrs": {
+                    "text": {
+                      "text": "file download",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 15,
               "hasOpenThreats": false,
               "attrs": {
                 ".marker-target": {
