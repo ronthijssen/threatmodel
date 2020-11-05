@@ -108,8 +108,8 @@
                 "height": 80
               },
               "position": {
-                "x": 43,
-                "y": 502
+                "x": 90,
+                "y": 420
               },
               "angle": 0,
               "id": "0864c526-aa08-48bd-aa77-10fede29993d",
@@ -134,8 +134,8 @@
                 "height": 100
               },
               "position": {
-                "x": 332,
-                "y": 247
+                "x": 354,
+                "y": 209
               },
               "angle": 0,
               "id": "bd9f3250-9088-4bad-b3d5-e33744a8c14b",
@@ -178,7 +178,7 @@
                 },
                 {
                   "ruleId": "13000296-b17d-4b72-9cc4-f5cc33f80e4c",
-                  "title": "Generic informtion disclosure threat",
+                  "title": "inappropriate content",
                   "type": "Information disclosure",
                   "status": "Mitigated",
                   "severity": "Medium",
@@ -435,7 +435,7 @@
         },
         "size": {
           "height": 590,
-          "width": 905.1454467773438
+          "width": 38510
         }
       }
     ]
